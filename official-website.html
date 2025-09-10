@@ -1,0 +1,151 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>韻品殿堂</title>
+        <link rel="stylesheet" href="test-utf-8.css">
+
+    </head>
+
+
+    <body>
+   
+
+        <h1>歡迎來到韻品殿堂</h1>
+        
+        <ul id="one">
+
+            <li onmousedown="down(this)" onmouseup="up(this)" 
+                onmouseover="over(this)" onmouseout="out(this)"><a href="#one">首頁</a></li>       <!-- href鏈接該id的標籤,點擊即可移動到該標籤的位置-->
+
+            <li onmousedown="down(this)" onmouseup="up(this)" 
+                onmouseover="over(this)" onmouseout="out(this)"><a href="#two">品牌歷史</a></li>
+
+            <li onmousedown="down(this)" onmouseup="up(this)" 
+                onmouseover="over(this)" onmouseout="out(this)"><a href="#six">品牌理念</a></li>
+            
+            <li onmousedown="down(this)" onmouseup="up(this)" 
+                onmouseover="over(this)" onmouseout="out(this)"><a href="#four">產品項目</a></li>
+
+            <li onmousedown="down(this)" onmouseup="up(this)" 
+                onmouseover="over(this)" onmouseout="out(this)"><a href="#three">聯絡我們</a></li>
+        </ul>
+
+
+
+        <h2 id="two">品牌歷史</h2> 
+
+        <div style="display:flex ; justify-content:center ">
+
+            <div style="flex:none ; justify-content:center ; margin:30px ; width:40% ">
+            <img  style="width:100%" src="house.png"> </img>
+            </div>
+
+            <div id="text1" >
+
+                <p>韻品殿堂的名稱蘊含著深刻的文化底蘊和品味，字面上的解讀即是「品味著充滿韻味的殿堂」。</p>
+                <p>這個名稱代表著我們的飲料不僅是一種味覺的享受，更是一種品味生活的藝術。</p>
+                    
+                品牌的創造者，認為每一杯飲品都應該是一場文化的颯宴。在這個殿堂裡，
+                我們不僅匠心獨運地製作每一款飲品，更將每一款飲品中的品味、
+                品質、品牌達到完美。
+
+            </div>
+
+        </div>
+
+
+
+        <h2 id="six">品牌理念</h2> 
+
+        <ul id="seven">
+
+            <li><p>崇尚文化:</p>韻品殿堂致力於崇尚傳統文化，將其註入每一杯飲品中。我們的飲品不僅滿足口腹之欲，更是一場文化的颯宴。 </li>
+
+            <li><p>品質保證:</p>我們追求卓越品質，從原料的選擇到製作工藝的控制，都嚴格把關，以確保每一位顧客都達到最高水準的飲品。</li>
+
+            <li><p>創新精神:</p>在韻品殿堂，我們擁抱創新精神。不斷嘗試新的口味和製作技巧，讓食客可以在每次光臨時都有新的驚喜。 </li> 
+
+        </ul>
+
+
+
+        <h2 id="four">產品列表</h2> 
+
+        <ul id="five">
+
+          <li>柑橘清香</li> <img style="width:100%" src="orange.png"></img>
+
+          <li>葡萄餘韻</li> <img style="width:100%" src="grape.png"></img>
+
+          <li>蜜桃回甘</li> <img style="width:100%" src="peach.png"></img>
+
+        </ul>
+
+
+
+        <h2 id="three">聯絡我們</h2> 
+        
+
+            <div id="connection">
+                    <img class="connection2" src="e-mail.png"></img> 
+
+                    <img class="connection2" src="phone.png"></img>
+                    
+                    <img class="connection2" src="address.png"></img>  
+            </div>
+
+
+
+            <div id="setting">
+                <div class="text">kartg0052598@gmail.com</div>
+                <div class="text">(+886) 0903231223</div>
+                <div class="text">新北市土城區延和路110號5樓 </div>
+            </div>
+
+
+
+            <!-- 複製google map的地圖分享裡面的嵌入地圖的HTML程式碼,貼上在body裡面,
+    並且要讓iframe區塊置中,所以要使用css的 display:flex;justify-content:center這屬性
+    ,這屬性只能讓使用的容器裡的項目區塊置中,所以要在iframe標籤外新增一個div標籤,才能讓
+    內部的iframe標籤有置中的效果-->    
+     <div id="mapset">  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.0190282543775!2d121.46718311430384!3d24.98976876935409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346802be147e95bd%3A0x470de12820a4959!2zMjM25paw5YyX5biC5Zyf5Z-O5Y2A5bu25ZKM6LevMTEw6Jmf!5e0!3m2!1szh-TW!2stw!4v1708861963880!5m2!1szh-TW!2stw" 
+            width="700" 
+            height="200" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>    
+     </div>   
+
+
+
+
+      <script>
+        function down(element){                     //事件處理 滑鼠按下會觸發的函式
+            element.style.backgroundColor="#E0E0E0";      //顏色變深
+        }
+        function up(element){                      //事件處理 滑鼠放開會觸發的函式
+            element.style.backgroundColor="#eceaea";      //顏色恢復
+        }
+        function over(element){                    //事件處理 滑鼠移入會觸發的函式
+            element.style.fontSize="17px";                //字體變大
+        }
+        function out(element){                     //事件處理 滑鼠移出會觸發的函式
+            element.style.fontSize="16px";                //字體恢復
+        }
+
+
+
+      </script>
+
+      
+       
+     
+
+    </body>
+
+</html>

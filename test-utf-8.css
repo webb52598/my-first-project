@@ -1,0 +1,210 @@
+html{                  
+    scroll-behavior:smooth;/*點擊href標籤,移動的時候可以有滑動效果 */
+}
+
+
+body{
+    margin:0 ; 
+    padding:0;
+}
+
+h1{
+    background-color:rgb(48, 46, 46) ; 
+    color:white ; 
+    text-align:center ; 
+    margin:0px ; 
+    padding:40px ;
+}
+
+#one{
+    list-style-type:none  ; 
+    display:flex ; 
+    justify-content:center ; 
+    margin:0 ; 
+    padding:15px ; 
+    background-color:#eceaea;
+}
+
+#one li {
+    margin-right:20px ;
+     font-weight:bold ;
+     padding:10px;
+}
+
+#two{ 
+    text-align:center;
+    margin-top:240px;
+    margin-bottom:200px;
+}
+
+#three{
+    text-align:center ; 
+    margin-top:240px ; 
+    margin-bottom:180px ;
+
+}
+
+
+#four{
+    text-align:center;
+    margin-top:120px;
+    margin-bottom:200px;
+}
+
+#five{
+    list-style-type:none ; 
+    text-align:center ;
+    padding:0 ;
+    margin:0px;
+ 
+}
+
+#five li{
+    border: 1px solid #ddd;
+    background-color: #f9f9f9 ;
+    margin:10px ;
+    padding:10px;
+}
+
+#six{ 
+    text-align:center;
+    margin-top:240px;
+    margin-bottom:200px;
+}
+
+#seven{
+     list-style-type:none;
+     margin-bottom:200px;
+     display:flex;
+     justify-content:center;
+     padding:0px;
+}
+
+#seven li{ 
+    margin-bottom:100px;
+    margin:75px;
+}
+
+#seven li p{
+    text-align:center;
+    margin-bottom:100px;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+#text1{
+    flex:none ; width:40% ; margin:30px;
+}
+
+
+
+#connection{
+    display:flex; 
+    justify-content:center;
+}
+
+
+.connection2{
+    flex:none;
+    margin:120px;
+    max-width: 100%; 
+    height: auto;
+}
+
+
+
+#setting{
+    display:flex;
+    justify-content:center;
+    margin-bottom:50px;
+}
+
+
+.text{
+    flex:none ; 
+    width:270px;   
+    margin:10px;
+    text-align:center;
+}
+
+
+#mapset{   
+    display:flex;
+    justify-content:center;
+    padding:0px;
+    border:0px;
+    margin-top:120px;
+    margin-bottom:60px;
+}   
+
+
+
+
+
+
+/*
+@media (max-width:900px){
+
+    .connection2{
+      
+    }
+
+    .text{
+      
+    }
+
+    
+}  */
+
+@media (max-width: 600px) {
+    h1 {
+        padding: 20px; /* 調整標題的內邊距 */
+    }
+
+    #one {
+        flex-wrap:wrap; 
+        text-align: center;
+    }
+
+    #one li {
+        width:90%;
+        margin-right: 0; /* 移除列表項的右邊距 */
+        margin-bottom: 10px; /* 增加下邊距 */
+    }
+
+    #text1{
+        font-size:12px;
+
+    }
+
+
+    #seven{
+        flex-wrap:wrap;
+    }
+
+    #seven li{
+        width:90%;
+        font-size:12px;
+    }
+
+
+    .connection2 {
+        margin: 50px ; /* 調整圖片之間的垂直間距 */
+    }
+
+    
+
+    .text {
+        width:140px;
+        margin:5px;
+        font-size:12px;
+    }
+
+}
